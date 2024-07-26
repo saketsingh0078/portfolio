@@ -37,7 +37,7 @@ export const Home = () => {
 
         <div className="mt-4 flex gap-3">
           <button className="bg-slate-800 rounded-full px-4 py-3 text-lg text-white">
-            Conatact me
+            Contact me
           </button>
           <a
             href={resumeLink}
