@@ -52,7 +52,6 @@ export const Home = () => {
             G
           </button>
         </div>
-
         <div className="border-2 h-16 border-gray-400 mt-8"></div>
       </div>
     </div>
