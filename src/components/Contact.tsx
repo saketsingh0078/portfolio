@@ -5,7 +5,7 @@ export const Contact = () => {
         <h1 className="text-[2.2vw] font-bold text-white">Contact Me</h1>
         <h1 className="text-gray-200">
           Please contact me directly at{" "}
-          <a href="mailto:saketsingh00078@gmail.com" className=" underline">
+          <a href=" mailto:saketsingh00078@gmail.com " className=" underline">
             saketsingh00078@gmail.com
           </a>{" "}
           or through this form.
