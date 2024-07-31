@@ -29,7 +29,7 @@ export const Experience = () => {
   };
 
   return (
-    <div className="h-[120vh] bg-gray-800">
+    <div className="h-[120vh] bg-gray-800 w-full">
       <div className="flex flex-col items-center">
         <h1 className="font-bold text-[2.2vw] text-white my-5">Experience</h1>
         <ExperienceItem {...experienceHclDetails} />

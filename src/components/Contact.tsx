@@ -1,6 +1,9 @@
-export const Contact = () => {
+export const Contact = ({ sectionRef }: any) => {
   return (
-    <div className="h-[65vh] bg-slate-700 flex flex-col items-center ">
+    <div
+      ref={sectionRef}
+      className="h-[65vh] bg-slate-700 flex flex-col items-center w-full"
+    >
       <div className="w-[50%] text-center p-6">
         <h1 className="text-[2.2vw] font-bold text-white">Contact Me</h1>
         <h1 className="text-gray-200">

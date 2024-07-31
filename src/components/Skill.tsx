@@ -1,6 +1,6 @@
 export const Skill = () => {
   return (
-    <div className="h-[45vh]  bg-slate-900 text-center w-full ">
+    <div className="h-[45vh] w-full bg-slate-900 text-center">
       <div className="flex flex-col items-center">
         <h1 className="text-[2.2vw] font-bold text-white pt-6">My Skills</h1>
 

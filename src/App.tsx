@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Experience } from "./components/Experience";
@@ -8,17 +9,76 @@ import { Project } from "./components/Project";
 import { Skill } from "./components/Skill";
 
 function App() {
+  const [activeSection, setActiveSection] = useState("Home");
+
+  const sectionRefs: any = {
+    Home: useRef(null),
+    About: useRef(null),
+    Experience: useRef(null),
+    Skills: useRef(null),
+    Projects: useRef(null), // Ensure the key is correct
+    Contact: useRef(null),
+  };
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+          // console.log(`Intersecting: ${entry.target.id}`);
+        }
+      });
+    }, options);
+
+    Object.keys(sectionRefs).forEach((key) => {
+      const element = sectionRefs[key].current;
+      if (element) {
+        observer.observe(element);
+        // console.log(`Observing: ${key}`);
+      }
+    });
+
+    return () => {
+      Object.keys(sectionRefs).forEach((key) => {
+        const element = sectionRefs[key].current;
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, [sectionRefs]);
+
   return (
-    <>
-      <Header />
-      <Home />
-      <About />
-      <Experience />
-      <Skill />
-      <Project />
-      <Contact />
+    <div className="w-screen">
+      <Header activeSection={activeSection} sectionRefs={sectionRefs} />
+      <div id="Home" ref={sectionRefs.Home} className="w-full">
+        <Home />
+      </div>
+      <div id="About" ref={sectionRefs.About} className="w-full">
+        <About />
+      </div>
+      <div id="Experience" ref={sectionRefs.Experience} className="w-full">
+        <Experience />
+      </div>
+      <div id="Skills" ref={sectionRefs.Skills} className="w-full">
+        <Skill />
+      </div>
+      <div id="Projects" ref={sectionRefs.Projects} className="w-full">
+        {" "}
+        {/* Ensure the ID matches the key */}
+        <Project />
+      </div>
+      <div id="Contact" ref={sectionRefs.Contact} className="w-ful">
+        <Contact />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

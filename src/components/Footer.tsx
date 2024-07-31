@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="bg-slate-600 text-gray-400 flex flex-col items-center">
+    <div className="bg-slate-600 text-gray-400 flex flex-col items-center w-full">
       <div className="w-[75%] text-center">
         <h1>© 2030 Saket. All rights reserved.</h1>
         <h1>
