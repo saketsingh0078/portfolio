@@ -1,9 +1,9 @@
 export const About = () => {
   return (
-    <div className="h-[75vh] bg-slate-700 flex flexx-col w-full justify-center">
-      <div className="w-[50%]  text-gray-200 text-center mt-3">
-        <h1 className="font-bold text-[2.2vw] mb-6">About Me</h1>
-        <h1 className="text-[1.3vw]">
+    <div className="h-fit bg-slate-700 flex flexx-col w-full justify-center ">
+      <div className="sm:w-[50%] w-[60%]  text-gray-200 text-center mt-3 mb-28">
+        <h1 className="font-bold text-[32px] mb-6">About Me</h1>
+        <h1 className="text-[20px]">
           My journey into programming began during my academic years, starting
           as a curious exploration and growing into a deep passion for frontend
           development with React. I've developed various dynamic applications,

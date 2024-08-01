@@ -7,7 +7,7 @@ export const Experience = () => {
     responsibilities: [
       "Developed and maintained a dynamic Internal Project (Employee Engagement and Management Platform) providing a self-service portal to streamline employee engagement and management processes within the company utilizing modern web technologies such as HTML, CSS, JavaScript, and React.js to create responsive and user-friendly interfaces.",
       "Transformed UI/UX wireframes into functional code, ensuring a seamless transition from design to implementation.",
-      "Migrated multi page user experience into single page application, improving user engagement by 30 %",
+      "Migrated multi page user experience into single page application, improving user engagement by 30 %.",
     ],
   };
 
@@ -29,9 +29,9 @@ export const Experience = () => {
   };
 
   return (
-    <div className="h-[120vh] bg-gray-800 w-full">
-      <div className="flex flex-col items-center">
-        <h1 className="font-bold text-[2.2vw] text-white my-5">Experience</h1>
+    <div className="h-fit bg-gray-800 w-full ">
+      <div className="flex flex-col items-center pb-32">
+        <h1 className="font-bold text-[32px] text-white my-5">Experience</h1>
         <ExperienceItem {...experienceHclDetails} />
         <div className="border-2 h-14 border-gray-400"></div>
         <ExperienceItem {...experienceInternshipDetails} />

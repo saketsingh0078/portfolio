@@ -10,13 +10,14 @@ import { Skill } from "./components/Skill";
 
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
+  const contactRefs = useRef(null);
 
   const sectionRefs: any = {
     Home: useRef(null),
     About: useRef(null),
     Experience: useRef(null),
     Skills: useRef(null),
-    Projects: useRef(null), // Ensure the key is correct
+    Projects: useRef(null),
     Contact: useRef(null),
   };
 
@@ -58,7 +59,7 @@ function App() {
     <div className="w-screen">
       <Header activeSection={activeSection} sectionRefs={sectionRefs} />
       <div id="Home" ref={sectionRefs.Home} className="w-full">
-        <Home />
+        <Home contactRefs={contactRefs} />
       </div>
       <div id="About" ref={sectionRefs.About} className="w-full">
         <About />
@@ -70,12 +71,10 @@ function App() {
         <Skill />
       </div>
       <div id="Projects" ref={sectionRefs.Projects} className="w-full">
-        {" "}
-        {/* Ensure the ID matches the key */}
         <Project />
       </div>
       <div id="Contact" ref={sectionRefs.Contact} className="w-ful">
-        <Contact />
+        <Contact contactRefs={contactRefs} />
       </div>
       <Footer />
     </div>

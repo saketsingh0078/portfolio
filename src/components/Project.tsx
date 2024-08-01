@@ -24,8 +24,8 @@ export const Project = () => {
   };
 
   return (
-    <div className=" min-h-[100vh]  w-full bg-slate-800 flex flex-col items-center pb-28">
-      <h1 className="text-[2.2vw] font-bold text-white py-6 text-center">
+    <div className=" h-fit  w-full bg-slate-800 flex flex-col items-center pb-28">
+      <h1 className="text-[32px] font-bold text-white py-6 text-center">
         My Project
       </h1>
       <ProjectItem {...project1} />
