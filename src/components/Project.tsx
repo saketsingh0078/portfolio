@@ -18,15 +18,15 @@ export const Project = () => {
     tech: ["React", "Tailwind", "Redux", "Firebase", "OpenAI API"],
     img: projectImg2,
     liveLink: "",
-    gitLink: "",
+    gitLink: "https://github.com/saketsingh0078/ott-gpt",
   };
   const project3 = {
     name: "Crework-Todo",
     desc: "Sign in with email and password.Sign up with full name, email, and password (passwords are encrypted before storing).Sidebar displaying user name and logout button.Main area with four columns: To Do, In Progress, Under Review, and Finished. Each column has a button to add new tasks.Add tasks with title, description, status, priority, and deadline.Move tasks between columns.Authentication:Uses NextAuth for secure authentication and access control.",
     tech: ["React", "Tailwind", "Node", "Express", "MongoDB"],
     img: projectImg3,
-    liveLink: "",
-    gitLink: "",
+    liveLink: "https://crework-assignment-mu.vercel.app/",
+    gitLink: "https://github.com/saketsingh0078/creworkAssignment",
   };
 
   return (
