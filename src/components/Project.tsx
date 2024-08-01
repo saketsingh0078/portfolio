@@ -9,18 +9,24 @@ export const Project = () => {
     desc: "Developed a responsive video streaming platform , ensuring a modern and user-friendly interface. Implemented infinite scroll to enhance user experience by dynamically loading content. Utilized debouncing to optimize search functionality, reducing API calls and improving performance and manages the state using Redux. Integrated live chat feature with API polling to enable real-time user interaction.",
     tech: ["React", "Tailwind", "Redux"],
     img: projectImg1,
+    liveLink: "https://video-streaming-1c27d.web.app/",
+    gitLink: "https://github.com/saketsingh0078/VideoStreaming",
   };
   const project2 = {
     name: "OTT-Gpt",
     desc: "OTT-GPT is an innovative OTT video platform that revolutionizes content discovery with the integration of GPT (Generative Pre-trained Transformer). This project features a comprehensive library of movies and TV shows, enabling users to stream their favorite content seamlessly. The standout feature is the advanced search functionality powered by GPT, which allows users to find videos using GPT",
     tech: ["React", "Tailwind", "Redux", "Firebase", "OpenAI API"],
     img: projectImg2,
+    liveLink: "",
+    gitLink: "",
   };
   const project3 = {
-    name: "Mini-Paytm",
-    desc: "Mini-Paytm is a versatile payment platform designed to streamline financial transactions. This project emulates the core functionalities of Paytm, allowing users to make seamless digital payments, transfer money, and manage their finances efficiently. With a user-friendly interface, Mini-Paytm ensures that transactions are both easy to perform and highly secure.",
+    name: "Crework-Todo",
+    desc: "Sign in with email and password.Sign up with full name, email, and password (passwords are encrypted before storing).Sidebar displaying user name and logout button.Main area with four columns: To Do, In Progress, Under Review, and Finished. Each column has a button to add new tasks.Add tasks with title, description, status, priority, and deadline.Move tasks between columns.Authentication:Uses NextAuth for secure authentication and access control.",
     tech: ["React", "Tailwind", "Node", "Express", "MongoDB"],
     img: projectImg3,
+    liveLink: "",
+    gitLink: "",
   };
 
   return (

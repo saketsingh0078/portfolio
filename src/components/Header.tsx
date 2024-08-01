@@ -4,7 +4,7 @@ import { IoIosMenu } from "react-icons/io";
 import SidebarMenu from "./SidebarMenu";
 
 export const Header = ({ sectionRefs, activeSection }: any) => {
-  const [sideMenu, setSideMenu] = useState(true);
+  const [sideMenu, setSideMenu] = useState(false);
 
   const handleScroll = (section: any) => {
     sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
