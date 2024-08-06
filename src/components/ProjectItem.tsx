@@ -19,8 +19,8 @@ export const ProjectItem = ({
   gitLink,
 }: ProjectDetails) => {
   return (
-    <div className="mb-8 h-full flex justify-center   ">
-      <div className="sm:w-[60%] w-[80%] bg-slate-600 sm:pl-8 sm:py-6 pl-4 py-2">
+    <div className="mb-8 h-full flex justify-center ">
+      <div className="sm:w-[60%] w-[80%] bg-slate-600 sm:pl-8 sm:py-6 pl-4 py-2  transition-transform duration-300 transform hover:scale-[110%] border-2 rounded-lg shadow-md shadow-slate-400">
         <div className="flex gap-12 items-center">
           <h1 className="text-white text-[22px] font-bold">{name}</h1>
           <div className="flex gap-10">
@@ -40,7 +40,7 @@ export const ProjectItem = ({
               </h1>
 
               <img
-                className="w-[40%] sm:h-[35vh] mb-3  transition-transform duration-300 transform hover:scale-x-[150%] hover:scale-y-[110%] "
+                className="w-[40%] sm:h-[35vh] mb-3  "
                 src={img}
                 alt="project_photo"
               />
