@@ -6,7 +6,7 @@ export const Footer = () => {
         <h1>
           About this website: built with React & Next.js (App Router & Server
           Actions), TypeScript, Tailwind CSS, Framer Motion, React Email &
-          Resend, Vercel hosting.
+          Resend hosting.
         </h1>
       </div>
     </div>
