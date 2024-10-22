@@ -17,7 +17,7 @@ export const Project = () => {
     desc: "OTT-GPT is an innovative OTT video platform that revolutionizes content discovery with the integration of GPT (Generative Pre-trained Transformer). This project features a comprehensive library of movies and TV shows, enabling users to stream their favorite content seamlessly. The standout feature is the advanced search functionality powered by GPT, which allows users to find videos using GPT",
     tech: ["React", "Tailwind", "Redux", "Firebase", "OpenAI API"],
     img: projectImg2,
-    liveLink: "",
+    liveLink: "https://ott-gpt.netlify.app/",
     gitLink: "https://github.com/saketsingh0078/ott-gpt",
   };
   const project3 = {
