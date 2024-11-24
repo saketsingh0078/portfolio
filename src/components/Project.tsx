@@ -25,7 +25,7 @@ export const Project = () => {
     desc: "Sign in with email and password.Sign up with full name, email, and password (passwords are encrypted before storing).Sidebar displaying user name and logout button.Main area with four columns: To Do, In Progress, Under Review, and Finished. Each column has a button to add new tasks.Add tasks with title, description, status, priority, and deadline.Move tasks between columns.Authentication:Uses NextAuth for secure authentication and access control.",
     tech: ["React", "Tailwind", "Node", "Express", "MongoDB"],
     img: projectImg3,
-    liveLink: "https://crework-assignment-mu.vercel.app/",
+    liveLink: "https://task-tracker-saket.vercel.app/",
     gitLink: "https://github.com/saketsingh0078/creworkAssignment",
   };
 
